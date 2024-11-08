@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Memento", "1.Memento\1.Memento.csproj", "{E96850F9-DA55-4B4E-A8C4-A90D7E043395}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.State", "2.State\2.State.csproj", "{ABC4647C-BE85-467A-91D5-21981F974826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{E96850F9-DA55-4B4E-A8C4-A90D7E043395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E96850F9-DA55-4B4E-A8C4-A90D7E043395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E96850F9-DA55-4B4E-A8C4-A90D7E043395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC4647C-BE85-467A-91D5-21981F974826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC4647C-BE85-467A-91D5-21981F974826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC4647C-BE85-467A-91D5-21981F974826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC4647C-BE85-467A-91D5-21981F974826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -29,5 +35,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{854CC4D6-F167-4055-A041-7EF5478FA435} = {C99F9196-C8A9-4814-8507-253413F6D5B2}
 		{E96850F9-DA55-4B4E-A8C4-A90D7E043395} = {854CC4D6-F167-4055-A041-7EF5478FA435}
+		{ABC4647C-BE85-467A-91D5-21981F974826} = {854CC4D6-F167-4055-A041-7EF5478FA435}
 	EndGlobalSection
 EndGlobal
