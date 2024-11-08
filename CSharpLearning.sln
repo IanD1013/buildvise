@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Fundamentals", "1-Fundamentals", "{9CE7D7DD-5EBF-49E3-8B29-61399652EF72}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{C99F9196-C8A9-4814-8507-253413F6D5B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{9FF6161A-D57F-4B75-8BF5-9B9ED88447C5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{854CC4D6-F167-4055-A041-7EF5478FA435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Memento", "1.Memento\1.Memento.csproj", "{E96850F9-DA55-4B4E-A8C4-A90D7E043395}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9FF6161A-D57F-4B75-8BF5-9B9ED88447C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FF6161A-D57F-4B75-8BF5-9B9ED88447C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FF6161A-D57F-4B75-8BF5-9B9ED88447C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FF6161A-D57F-4B75-8BF5-9B9ED88447C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96850F9-DA55-4B4E-A8C4-A90D7E043395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96850F9-DA55-4B4E-A8C4-A90D7E043395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96850F9-DA55-4B4E-A8C4-A90D7E043395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96850F9-DA55-4B4E-A8C4-A90D7E043395}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -25,6 +27,7 @@ Global
 		SolutionGuid = {323FABFC-88F1-4D18-84DA-4E6B5301EAE6}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9FF6161A-D57F-4B75-8BF5-9B9ED88447C5} = {9CE7D7DD-5EBF-49E3-8B29-61399652EF72}
+		{854CC4D6-F167-4055-A041-7EF5478FA435} = {C99F9196-C8A9-4814-8507-253413F6D5B2}
+		{E96850F9-DA55-4B4E-A8C4-A90D7E043395} = {854CC4D6-F167-4055-A041-7EF5478FA435}
 	EndGlobalSection
 EndGlobal
