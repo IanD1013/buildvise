@@ -1,3 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using TheDependencyProblem;
 
-Console.WriteLine("Hello, World!");
+var greeter = new Greeter(new SystemDateTimeProvider()); 
+
+var message = greeter.CreateGreetMessage();
+Console.WriteLine(message);
