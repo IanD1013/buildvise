@@ -2,7 +2,12 @@ namespace TheDependencyProblem.Data;
 
 public class UserService
 {
-    private readonly UserRepository _userRepository = new(); // this depends on implementation
+    private readonly IUserRepository _userRepository;
+
+    public UserService(IUserRepository userRepository)
+    {
+        _userRepository = userRepository;
+    }
 
     public async Task<IEnumerable<User>> GetAllAsync()
     {

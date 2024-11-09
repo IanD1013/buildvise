@@ -2,10 +2,23 @@
 
 namespace TheDependencyProblem.Data;
 
-public class UserRepository
+public interface IUserRepository
 {
-    private readonly SqliteDbConnectionFactory _connectionFactory = new();
+    Task<IEnumerable<User>> GetAllAsync();
+    Task<User?> GetByIdAsync(Guid id);
+    Task<bool> CreateAsync(User user);
+    Task<bool> DeleteByIdAsync(Guid id);
+}
 
+public class UserRepository : IUserRepository
+{
+    private readonly IDbConnectionFactory _connectionFactory;
+
+    public UserRepository(IDbConnectionFactory connectionFactory)
+    {
+        _connectionFactory = connectionFactory;
+    }
+    
     public async Task<IEnumerable<User>> GetAllAsync()
     {
         using var connection = await _connectionFactory.CreateDbConnectionAsync();

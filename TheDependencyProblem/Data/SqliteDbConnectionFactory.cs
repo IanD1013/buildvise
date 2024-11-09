@@ -3,7 +3,20 @@ using Microsoft.Data.Sqlite;
 
 namespace TheDependencyProblem.Data;
 
-public class SqliteDbConnectionFactory
+public interface IDbConnectionFactory
+{
+    Task<IDbConnection> CreateDbConnectionAsync();
+}
+
+public class MySqlDbConnectionFactory : IDbConnectionFactory
+{
+    public Task<IDbConnection> CreateDbConnectionAsync()
+    {
+        throw new NotImplementedException();
+    }
+}
+
+public class SqliteDbConnectionFactory : IDbConnectionFactory
 {
     private readonly DbConnectionOptions _connectionOptions;
 
