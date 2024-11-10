@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fundamentals", "Fundamental
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncParallelAndMultiThreading", "AsyncParallelAndMultiThreading\AsyncParallelAndMultiThreading.csproj", "{D08EA2BE-6F48-40F8-B66A-877C21001EFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Strategy", "3.Strategy\3.Strategy.csproj", "{FC271D81-08D9-4DAB-99BE-A8B73ABE4866}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{D08EA2BE-6F48-40F8-B66A-877C21001EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D08EA2BE-6F48-40F8-B66A-877C21001EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D08EA2BE-6F48-40F8-B66A-877C21001EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC271D81-08D9-4DAB-99BE-A8B73ABE4866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC271D81-08D9-4DAB-99BE-A8B73ABE4866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC271D81-08D9-4DAB-99BE-A8B73ABE4866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC271D81-08D9-4DAB-99BE-A8B73ABE4866}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 		{126E5448-E11E-45CD-B972-23B789BC1A34} = {09739915-792C-4FF7-933E-D99F328D1B8F}
 		{97EA18B8-9F2E-4568-99D0-AD9990996431} = {126E5448-E11E-45CD-B972-23B789BC1A34}
 		{D08EA2BE-6F48-40F8-B66A-877C21001EFF} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
+		{FC271D81-08D9-4DAB-99BE-A8B73ABE4866} = {854CC4D6-F167-4055-A041-7EF5478FA435}
 	EndGlobalSection
 EndGlobal
