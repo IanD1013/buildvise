@@ -8,4 +8,3 @@ textHistory.Backup(textBox.Save());
 
 textBox.SetText("Hello World!");
 textHistory.Backup(textBox.Save());
-
