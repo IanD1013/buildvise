@@ -11,6 +11,8 @@ public class Ordering : QueryRunner
         // SingleOrderByDescending_Q();
         // SingleOrderBy_F();
         // SingleOrderByDescending_F();
+        // MultipleOrderBy_Q();
+        // MultipleOrderBy_F();
     }
 
     /// <summary>
@@ -68,5 +70,35 @@ public class Ordering : QueryRunner
         
         PrintAll(result);
     }
+    
+    /// <summary>
+    /// Multiple order by, query syntax
+    /// </summary>
+    private void MultipleOrderBy_Q()
+    {
+        var sourceMovies = Repository.GetAllMovies();
+
+        var result =
+            from movie in sourceMovies
+            orderby movie.ReleaseDate.Year descending, movie.Name 
+            select movie;
+        
+        PrintAll(result);
+    }
+    
+    /// <summary>
+    /// Multiple order by, fluent syntax
+    /// </summary>
+    private void MultipleOrderBy_F()
+    {
+        var sourceMovies = Repository.GetAllMovies();
+
+        var result = sourceMovies
+            .OrderByDescending(movie => movie.ReleaseDate.Year)
+            .ThenBy(movie => movie.Name);
+        
+        PrintAll(result);
+    }
 }
+
 
