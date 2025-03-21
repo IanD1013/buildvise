@@ -1,3 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Linq.Cmd._3_FilteringAndOrdering;
 
-Console.WriteLine("Hello, World!");
+new WhereConditions().Run();
