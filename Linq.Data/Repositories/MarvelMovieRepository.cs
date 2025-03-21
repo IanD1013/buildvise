@@ -1,5 +1,7 @@
 using Linq.Data.Models;
 
+// ReSharper disable StringLiteralTypo
+
 namespace Linq.Data.Repositories;
 
 public class MarvelMovieRepository
@@ -55,6 +57,28 @@ public class MarvelMovieRepository
         movies.AddRange(_phase4Movies);
         movies.AddRange(_phase5Movies);
         return movies;
+    }
+    
+    public List<Movie> GetAllMoviesAsList()
+    {
+        List<Movie> movies = [];
+        movies.AddRange(_phase1Movies);
+        movies.AddRange(_phase2Movies);
+        movies.AddRange(_phase3Movies);
+        movies.AddRange(_phase4Movies);
+        movies.AddRange(_phase5Movies);
+        return movies;
+    }
+    
+    public IQueryable<Movie> GetAllMoviesAsQueryable()
+    {
+        List<Movie> movies = [];
+        movies.AddRange(_phase1Movies);
+        movies.AddRange(_phase2Movies);
+        movies.AddRange(_phase3Movies);
+        movies.AddRange(_phase4Movies);
+        movies.AddRange(_phase5Movies);
+        return movies.AsQueryable();
     }
 
     #region Data
