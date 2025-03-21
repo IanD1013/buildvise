@@ -73,6 +73,14 @@ public class WhereConditions : QueryRunner
     private void MultipleConditions_Q()
     {
         var sourceMovies = Repository.GetAllMovies();
+        
+        var result = 
+            from movie in sourceMovies
+            where movie.Name.Contains("Spider-Man")
+            where movie.ReleaseDate.Year < 2020
+            select movie;
+        
+        PrintAll(result);
     }
     
     /// <summary>
@@ -81,5 +89,11 @@ public class WhereConditions : QueryRunner
     private void MultiplesConditions_F()
     {
         var sourceMovies = Repository.GetAllMovies();
+
+        var result = sourceMovies
+            .Where(movie => movie.Name.Contains("Iron"))
+            .Where(movie => movie.ReleaseDate.Year < 2020);
+        
+        PrintAll(result);
     }
 }
