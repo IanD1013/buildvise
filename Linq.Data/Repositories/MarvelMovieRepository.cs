@@ -88,6 +88,16 @@ public class MarvelMovieRepository
 
         return result;
     }
+    
+    public IEnumerable<Director> GetSomeDirectors()
+    {
+        return _directors;
+    }
+    
+    public IEnumerable<CastMember> GetSomeCastMembers()
+    {
+        return _castMembers;
+    }
 
     #region Data
 
@@ -450,6 +460,37 @@ public class MarvelMovieRepository
             Directors = [new Person("Jake", "Schreier")],
             Producers = [new Person("Kevin", "Feige")]
         }
+    ];
+
+    private readonly List<Director> _directors =
+    [
+        new Director("Anna", "Boden", "Anna Boden"),
+        new Director("Anthony", "Russo", "Anthony Russo"),
+        new Director("Cate", "Shortland", "Cate Shortland"),
+        new Director("Joe", "Russo", "Joe Russo"),
+        new Director("Jon", "Favreau", "Jon Favreau"),
+        new Director("Jon", "Watts", "Jon Watts"),
+        new Director("Joss", "Whedon", "Joss Whedon"),
+    ];
+    
+    private readonly List<CastMember> _castMembers =
+    [
+        new CastMember("Iron Man", "Robert Downey Jr.", "Tony Stark"),
+        new CastMember("Iron Man", "Gwyneth Paltrow", "Pepper Potts"),
+        new CastMember("Iron Man", "Terrence Howard", "Rhodey"),
+        new CastMember("Iron Man", "Jeff Bridges", "Obadiah Stane"),
+        new CastMember("Thor", "Chris Hemsworth", "Thor"),
+        new CastMember("Thor", "Anthony Hopkins", "Odin"),
+        new CastMember("Thor", "Natalie Portman", "Jane Foster"),
+        new CastMember("Thor", "Tom Hiddleston", "Loki"),
+        new CastMember("Ant-Man", "Paul Rudd", "Scott Lang"),
+        new CastMember("Ant-Man", "Michael Douglas", "Dr. Hank Pym"),
+        new CastMember("Ant-Man", "Corey Stoll", "Darren Cross"),
+        new CastMember("Ant-Man", "Evangeline Lilly", "Hope van Dyne"),
+        new CastMember("Batman Begins", "Christian Bale", "Bruce Wayne"),
+        new CastMember("Batman Begins", "Michael Caine", "Alfred"),
+        new CastMember("Batman Begins", "Katie Holmes", "Rachel Dawes"),
+        new CastMember("Batman Begins", "Gary Oldman", "Jim Gordon"),
     ];
 
     #endregion
