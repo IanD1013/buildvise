@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.IntroductionTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.ReferenceTypesAndValueTypes", "Fundamentals.ReferenceTypesAndValueTypes\Fundamentals.ReferenceTypesAndValueTypes.csproj", "{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.AsyncParallelAndMultiThreading", "Fundamentals.AsyncParallelAndMultiThreading\Fundamentals.AsyncParallelAndMultiThreading.csproj", "{4270A77A-4AD5-4F0B-913B-CE14A90BF151}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4270A77A-4AD5-4F0B-913B-CE14A90BF151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4270A77A-4AD5-4F0B-913B-CE14A90BF151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4270A77A-4AD5-4F0B-913B-CE14A90BF151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4270A77A-4AD5-4F0B-913B-CE14A90BF151}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,5 +100,6 @@ Global
 		{91857A67-0708-474C-B241-659E6E483ED3} = {11EEA71C-05FF-4F80-871E-AFD3166F5237}
 		{76DFDE51-EDEB-4507-B058-CC4DA6832B55} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
+		{4270A77A-4AD5-4F0B-913B-CE14A90BF151} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 	EndGlobalSection
 EndGlobal
