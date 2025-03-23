@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq.Cmd", "Linq.Cmd\Linq.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.IntroductionToOop", "Fundamentals.IntroductionToOop\Fundamentals.IntroductionToOop.csproj", "{76DFDE51-EDEB-4507-B058-CC4DA6832B55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.ReferenceTypesAndValueTypes", "Fundamentals.ReferenceTypesAndValueTypes\Fundamentals.ReferenceTypesAndValueTypes.csproj", "{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{76DFDE51-EDEB-4507-B058-CC4DA6832B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76DFDE51-EDEB-4507-B058-CC4DA6832B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76DFDE51-EDEB-4507-B058-CC4DA6832B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,5 +93,6 @@ Global
 		{6BB1100D-856E-470D-80AD-A81B8F968B72} = {11EEA71C-05FF-4F80-871E-AFD3166F5237}
 		{91857A67-0708-474C-B241-659E6E483ED3} = {11EEA71C-05FF-4F80-871E-AFD3166F5237}
 		{76DFDE51-EDEB-4507-B058-CC4DA6832B55} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
+		{13EE6A86-B5A0-4C65-81F9-0694F4AFBE0D} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 	EndGlobalSection
 EndGlobal
