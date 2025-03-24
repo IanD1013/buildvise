@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.AsyncParallelA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsynchronousProgramming", "AsynchronousProgramming", "{D9659E3E-857D-4875-894E-2DABDC59A840}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingTaskFromScratch", "CreatingTaskFromScratch\CreatingTaskFromScratch.csproj", "{A8FF2268-1FB5-4869-9289-4923AC4B7BFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousProgramming.CreatingTaskFromScratch", "AsynchronousProgramming.CreatingTaskFromScratch\AsynchronousProgramming.CreatingTaskFromScratch.csproj", "{A8FF2268-1FB5-4869-9289-4923AC4B7BFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

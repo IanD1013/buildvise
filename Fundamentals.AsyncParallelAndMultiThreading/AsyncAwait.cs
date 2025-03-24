@@ -38,9 +38,7 @@
         
 /////////////////////////////////////////////////////////////////////////////////
         // like our task examples, we can run several async methods
-        async Task<string> ThirdAsyncMethod(
-            TimeSpan timeToWait,
-            string messageToWrite)
+        async Task<string> ThirdAsyncMethod(TimeSpan timeToWait, string messageToWrite)
         {
             await Task.Delay(timeToWait);
             Console.WriteLine(messageToWrite);
