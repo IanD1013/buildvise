@@ -2,13 +2,12 @@
 
 Console.WriteLine($"Starting Thread Id: {Environment.CurrentManagedThreadId}");
 
-DomeTrainTask.Run(() => Console.WriteLine($"First DomeTrainTask Id: {Environment.CurrentManagedThreadId}")).Wait();
+await DomeTrainTask.Run(() => Console.WriteLine($"First DomeTrainTask Id: {Environment.CurrentManagedThreadId}"));
 
-DomeTrainTask.Delay(TimeSpan.FromSeconds(1)).Wait();
+await DomeTrainTask.Delay(TimeSpan.FromSeconds(1));
 
 Console.WriteLine($"Second DomeTrainTask Id: {Environment.CurrentManagedThreadId}");
 
-DomeTrainTask.Delay(TimeSpan.FromSeconds(1)).Wait();
+await DomeTrainTask.Delay(TimeSpan.FromSeconds(1));
 
-DomeTrainTask.Run(() => Console.WriteLine($"Third DomeTrainTask Id: {Environment.CurrentManagedThreadId}")).Wait();
-
+await DomeTrainTask.Run(() => Console.WriteLine($"Third DomeTrainTask Id: {Environment.CurrentManagedThreadId}"));
