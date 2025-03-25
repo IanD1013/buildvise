@@ -21,6 +21,15 @@ public class DomeTrainTask
         }
     }
 
+    public static DomeTrainTask Delay(TimeSpan delay)
+    {
+        DomeTrainTask task = new();
+
+        new Timer(_ => task.SetResult()).Change(delay, Timeout.InfiniteTimeSpan);
+        
+        return task;
+    }
+
     public static DomeTrainTask Run(Action action)
     {
         DomeTrainTask task = new();
