@@ -35,13 +35,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.ReferenceTypes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.AsyncParallelAndMultiThreading", "Fundamentals.AsyncParallelAndMultiThreading\Fundamentals.AsyncParallelAndMultiThreading.csproj", "{4270A77A-4AD5-4F0B-913B-CE14A90BF151}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsynchronousProgramming", "AsynchronousProgramming", "{D9659E3E-857D-4875-894E-2DABDC59A840}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncProgramming", "AsyncProgramming", "{D9659E3E-857D-4875-894E-2DABDC59A840}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousProgramming.CreatingTaskFromScratch", "AsynchronousProgramming.CreatingTaskFromScratch\AsynchronousProgramming.CreatingTaskFromScratch.csproj", "{A8FF2268-1FB5-4869-9289-4923AC4B7BFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgramming.CreatingTaskFromScratch", "AsyncProgramming.CreatingTaskFromScratch\AsyncProgramming.CreatingTaskFromScratch.csproj", "{A8FF2268-1FB5-4869-9289-4923AC4B7BFE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.MoreAdvancedMethodsAndFunctions", "Fundamentals.MoreAdvancedMethodsAndFunctions\Fundamentals.MoreAdvancedMethodsAndFunctions.csproj", "{53BC83E1-FA13-49A1-855E-0470EE88AC82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.OOP", "Fundamentals.OOP\Fundamentals.OOP.csproj", "{5F6125B5-77AE-422A-B1A1-6095829F0DED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgramming.BestPractices", "AsyncProgramming.BestPractices\AsyncProgramming.BestPractices.csproj", "{BAA88F10-2562-4BA0-B95A-B78C0A501CEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,10 @@ Global
 		{5F6125B5-77AE-422A-B1A1-6095829F0DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F6125B5-77AE-422A-B1A1-6095829F0DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F6125B5-77AE-422A-B1A1-6095829F0DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA88F10-2562-4BA0-B95A-B78C0A501CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA88F10-2562-4BA0-B95A-B78C0A501CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA88F10-2562-4BA0-B95A-B78C0A501CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA88F10-2562-4BA0-B95A-B78C0A501CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,5 +130,6 @@ Global
 		{A8FF2268-1FB5-4869-9289-4923AC4B7BFE} = {D9659E3E-857D-4875-894E-2DABDC59A840}
 		{53BC83E1-FA13-49A1-855E-0470EE88AC82} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 		{5F6125B5-77AE-422A-B1A1-6095829F0DED} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
+		{BAA88F10-2562-4BA0-B95A-B78C0A501CEE} = {D9659E3E-857D-4875-894E-2DABDC59A840}
 	EndGlobalSection
 EndGlobal

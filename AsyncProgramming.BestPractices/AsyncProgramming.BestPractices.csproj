@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AsyncAwaitBestPractices.MVVM" Version="9.0.0" />
+      <PackageReference Include="CommunityToolkit.Maui" Version="11.2.0" />
+      <PackageReference Include="CommunityToolkit.Maui.Markup" Version="5.1.0" />
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+      <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="9.3.0" />
+      <PackageReference Include="Microsoft.Maui.Controls" Version="10.0.0-preview.2.25165.1" />
+      <PackageReference Include="Refit.HttpClientFactory" Version="8.0.0" />
+    </ItemGroup>
+
+</Project>
