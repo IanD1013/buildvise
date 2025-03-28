@@ -43,7 +43,8 @@ partial class NewsViewModel : BaseViewModel
 		try
 		{
 			// ToDo Refactor (finished)
-			var topStoriesList = await GetTopStories(token, StoriesConstants.NumberOfStories).ConfigureAwait(false);
+			var topStoriesList = await GetTopStories(token, StoriesConstants.NumberOfStories)
+										.ConfigureAwait(ConfigureAwaitOptions.None | ConfigureAwaitOptions.ForceYielding);
 			// now a thread that is not thread 1 continues on 
 			
 			TopStoryCollection.Clear();
@@ -60,8 +61,8 @@ partial class NewsViewModel : BaseViewModel
 		}
 		finally
 		{
-			// ToDo Refactor
-			minimumRefreshTimeTask.Wait();
+			// ToDo Refactor (finished)
+			await minimumRefreshTimeTask.ConfigureAwait(false);
 			IsListRefreshing = false;
 		}
 	}
