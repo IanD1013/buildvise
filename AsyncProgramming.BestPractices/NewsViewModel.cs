@@ -18,7 +18,7 @@ partial class NewsViewModel : BaseViewModel
 	{
 		_hackerNewsAPIService = hackerNewsAPIService;
 
-		//ToDo Refactor
+		//ToDo Refactor (finished)
 		Refresh(CancellationToken.None).SafeFireAndForget(ex => Trace.WriteLine(ex));
 		// Thread 1 will continue on to this line of code while Refresh is still running
 	}
@@ -36,8 +36,9 @@ partial class NewsViewModel : BaseViewModel
 	[RelayCommand]
 	async Task Refresh(CancellationToken token)
 	{
-		// ToDo Refactor
-		var minimumRefreshTimeTask = Task.Delay(TimeSpan.FromSeconds(2));
+		// ToDo Refactor (finished)
+		var minimumRefreshTimeTask = Task.Delay(TimeSpan.FromSeconds(2), token);
+		// var minimumRefreshTimeTask = Task.Delay(TimeSpan.FromSeconds(2)).WaitAsync(token);
 
 		try
 		{
