@@ -42,9 +42,10 @@ partial class NewsViewModel : BaseViewModel
 
 		try
 		{
-			// ToDo Refactor
-			var topStoriesList = await GetTopStories(token, StoriesConstants.NumberOfStories);
-
+			// ToDo Refactor (finished)
+			var topStoriesList = await GetTopStories(token, StoriesConstants.NumberOfStories).ConfigureAwait(false);
+			// now a thread that is not thread 1 continues on 
+			
 			TopStoryCollection.Clear();
 
 			foreach (var story in topStoriesList)
