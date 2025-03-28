@@ -19,7 +19,8 @@ partial class NewsViewModel : BaseViewModel
 		_hackerNewsAPIService = hackerNewsAPIService;
 
 		//ToDo Refactor
-		Refresh(CancellationToken.None);
+		Refresh(CancellationToken.None).SafeFireAndForget(ex => Trace.WriteLine(ex));
+		// Thread 1 will continue on to this line of code while Refresh is still running
 	}
 
 	public event EventHandler<string> PullToRefreshFailed
