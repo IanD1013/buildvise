@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousProgramming.Cre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.MoreAdvancedMethodsAndFunctions", "Fundamentals.MoreAdvancedMethodsAndFunctions\Fundamentals.MoreAdvancedMethodsAndFunctions.csproj", "{53BC83E1-FA13-49A1-855E-0470EE88AC82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.OOP", "Fundamentals.OOP\Fundamentals.OOP.csproj", "{5F6125B5-77AE-422A-B1A1-6095829F0DED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{53BC83E1-FA13-49A1-855E-0470EE88AC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53BC83E1-FA13-49A1-855E-0470EE88AC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53BC83E1-FA13-49A1-855E-0470EE88AC82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F6125B5-77AE-422A-B1A1-6095829F0DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F6125B5-77AE-422A-B1A1-6095829F0DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F6125B5-77AE-422A-B1A1-6095829F0DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F6125B5-77AE-422A-B1A1-6095829F0DED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,5 +123,6 @@ Global
 		{4270A77A-4AD5-4F0B-913B-CE14A90BF151} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 		{A8FF2268-1FB5-4869-9289-4923AC4B7BFE} = {D9659E3E-857D-4875-894E-2DABDC59A840}
 		{53BC83E1-FA13-49A1-855E-0470EE88AC82} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
+		{5F6125B5-77AE-422A-B1A1-6095829F0DED} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 	EndGlobalSection
 EndGlobal
