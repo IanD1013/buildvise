@@ -38,18 +38,13 @@ partial class NewsViewModel : BaseViewModel
 	{
 		// ToDo Refactor (finished)
 		var minimumRefreshTimeTask = Task.Delay(TimeSpan.FromSeconds(2), token);
-		// var minimumRefreshTimeTask = Task.Delay(TimeSpan.FromSeconds(2)).WaitAsync(token);
 
 		try
 		{
-			// ToDo Refactor (finished)
-			var topStoriesList = await GetTopStories(token, StoriesConstants.NumberOfStories)
-										.ConfigureAwait(ConfigureAwaitOptions.None | ConfigureAwaitOptions.ForceYielding);
-			// now a thread that is not thread 1 continues on 
-			
 			TopStoryCollection.Clear();
-
-			foreach (var story in topStoriesList)
+			
+			// ToDo Refactor (finished)
+			await foreach (var story in GetTopStories(token, StoriesConstants.NumberOfStories).ConfigureAwait(false))
 			{
 				if (!TopStoryCollection.Any(x => x.Title.Equals(story.Title, StringComparison.Ordinal)))
 					InsertIntoSortedCollection(TopStoryCollection, (a, b) => b.Score.CompareTo(a.Score), story);
@@ -67,23 +62,21 @@ partial class NewsViewModel : BaseViewModel
 		}
 	}
 
-	// ToDo Refactor
-	async Task<FrozenSet<StoryModel>> GetTopStories(CancellationToken token, int storyCount = int.MaxValue)
+	// ToDo Refactor (finished)
+	async IAsyncEnumerable<StoryModel> GetTopStories(CancellationToken token, int storyCount = int.MaxValue)
 	{
 		List<StoryModel> topStoryList = [];
 
 		var topStoryIds = await GetTopStoryIDs(token).ConfigureAwait(false);
+		
+		List<Task<StoryModel>> getTopStoriesTasks = topStoryIds.Select(id => GetStory(id, token)).ToList();
 
-		foreach (var topStoryId in topStoryIds)
+		await foreach (var topStoryTask in Task.WhenEach(getTopStoriesTasks))
 		{
-			var story = await GetStory(topStoryId, token).ConfigureAwait(false);
-			topStoryList.Add(story);
-
-			if (topStoryList.Count >= storyCount)
-				break;
+			var topStory = await topStoryTask.ConfigureAwait(false);
+			yield return topStory;
+			// yield return topStoryTask.Result;
 		}
-
-		return topStoryList.OrderByDescending(x => x.Score).ToFrozenSet();
 	}
 
 	//ToDo Refactor
