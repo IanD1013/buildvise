@@ -1,4 +1,4 @@
-﻿static class Program
+﻿static class ThreadStatic
 {
     // Apply ThreadStatic attribute to make this variable thread-local.
     [ThreadStatic]
