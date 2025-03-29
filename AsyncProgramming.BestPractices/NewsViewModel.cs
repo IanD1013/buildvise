@@ -79,14 +79,14 @@ partial class NewsViewModel : BaseViewModel
 		}
 	}
 
-	//ToDo Refactor
-	async Task<StoryModel> GetStory(long storyId, CancellationToken token)
+	//ToDo Refactor (finished)
+	Task<StoryModel> GetStory(long storyId, CancellationToken token)
 	{
-		return await _hackerNewsAPIService.GetStory(storyId, token);
+		return _hackerNewsAPIService.GetStory(storyId, token); // just return a task
 	}
 
-	//ToDo Refactor
-	async Task<FrozenSet<long>> GetTopStoryIDs(CancellationToken token)
+	//ToDo Refactor (finished)
+	async ValueTask<FrozenSet<long>> GetTopStoryIDs(CancellationToken token)
 	{
 		if (IsDataRecent(TimeSpan.FromHours(1)))
 			return TopStoryCollection.Select(x => x.Id).ToFrozenSet();
