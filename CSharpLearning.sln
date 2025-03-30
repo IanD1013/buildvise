@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgramming.BestPracti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgramming.NetInternals", "AsyncProgramming.NetInternals\AsyncProgramming.NetInternals.csproj", "{429D3899-B4BB-4E98-9CCF-B89E0198B11A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.BinaryAndStringData", "Fundamentals.BinaryAndStringData\Fundamentals.BinaryAndStringData.csproj", "{D6E25B76-0802-4A4E-BCEE-1B02F161E29F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{429D3899-B4BB-4E98-9CCF-B89E0198B11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{429D3899-B4BB-4E98-9CCF-B89E0198B11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{429D3899-B4BB-4E98-9CCF-B89E0198B11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E25B76-0802-4A4E-BCEE-1B02F161E29F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E25B76-0802-4A4E-BCEE-1B02F161E29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E25B76-0802-4A4E-BCEE-1B02F161E29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E25B76-0802-4A4E-BCEE-1B02F161E29F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -138,5 +144,6 @@ Global
 		{5F6125B5-77AE-422A-B1A1-6095829F0DED} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 		{BAA88F10-2562-4BA0-B95A-B78C0A501CEE} = {D9659E3E-857D-4875-894E-2DABDC59A840}
 		{429D3899-B4BB-4E98-9CCF-B89E0198B11A} = {D9659E3E-857D-4875-894E-2DABDC59A840}
+		{D6E25B76-0802-4A4E-BCEE-1B02F161E29F} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 	EndGlobalSection
 EndGlobal
