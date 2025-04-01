@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.BinaryAndStrin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.BasicValueTypes", "Fundamentals.BasicValueTypes\Fundamentals.BasicValueTypes.csproj", "{7618D351-5CCF-49E6-9A0E-7B120DF881D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.ControlFlow", "Fundamentals.ControlFlow\Fundamentals.ControlFlow.csproj", "{0EF82E80-9B3E-4020-BFF9-083F017B1D5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{7618D351-5CCF-49E6-9A0E-7B120DF881D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7618D351-5CCF-49E6-9A0E-7B120DF881D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7618D351-5CCF-49E6-9A0E-7B120DF881D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF82E80-9B3E-4020-BFF9-083F017B1D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF82E80-9B3E-4020-BFF9-083F017B1D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF82E80-9B3E-4020-BFF9-083F017B1D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF82E80-9B3E-4020-BFF9-083F017B1D5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,5 +158,6 @@ Global
 		{429D3899-B4BB-4E98-9CCF-B89E0198B11A} = {D9659E3E-857D-4875-894E-2DABDC59A840}
 		{D6E25B76-0802-4A4E-BCEE-1B02F161E29F} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 		{7618D351-5CCF-49E6-9A0E-7B120DF881D1} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
+		{0EF82E80-9B3E-4020-BFF9-083F017B1D5A} = {9C0EBBAF-E738-47E8-B75A-76D10372F9BE}
 	EndGlobalSection
 EndGlobal
