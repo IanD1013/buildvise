@@ -2,29 +2,22 @@
 
 using DesignPatterns.Behavioral.Memento;
 
-Originator originator = new();
-Caretaker caretaker = new();
+TextBox textBox = new();
+TextHistory textHistory = new();
 
-originator.SetState("State 1");
-caretaker.AddMemento(originator.CreateMemento());
+textBox.SetText("Hello");
+textHistory.Backup(textBox.Save());
 
-originator.SetState("State 2");
-caretaker.AddMemento(originator.CreateMemento());
+textBox.SetText("Hello, World!");
+textHistory.Backup(textBox.Save());
 
-originator.SetState("State 3");
-caretaker.AddMemento(originator.CreateMemento());
+Console.WriteLine($"Current text: {textBox.GetText()}"); // hello world 
 
-originator.SetState("State 4");
-caretaker.AddMemento(originator.CreateMemento());
+textHistory.Undo(textBox);
+Console.WriteLine($"After undo: {textBox.GetText()}"); // hello
 
-originator.Restore(caretaker.GetMemento(index: 0));
-Console.WriteLine(originator.GetState());
+textHistory.Undo(textBox);
+Console.WriteLine($"After second undo: {textBox.GetText()}"); // hello
 
-originator.Restore(caretaker.GetMemento(index: 2));
-Console.WriteLine(originator.GetState());
-
-originator.Restore(caretaker.GetMemento(index: 1));
-Console.WriteLine(originator.GetState());
-
-originator.Restore(caretaker.GetMemento(index: 3));
-Console.WriteLine(originator.GetState());
+textHistory.Redo(textBox);
+Console.WriteLine($"After first redo: {textBox.GetText()}");
