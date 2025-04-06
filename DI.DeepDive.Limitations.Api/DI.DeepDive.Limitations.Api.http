@@ -1,0 +1,6 @@
+@DI.DeepDive.Limitations.Api_HostAddress = http://localhost:5155
+
+GET {{DI.DeepDive.Limitations.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "Depe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Introduction", "1.Introduction", "{126E5448-E11E-45CD-B972-23B789BC1A34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheDependencyProblem", "TheDependencyProblem\TheDependencyProblem.csproj", "{97EA18B8-9F2E-4568-99D0-AD9990996431}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Intro.TheDependencyProblem", "DI.Intro.TheDependencyProblem\DI.Intro.TheDependencyProblem.csproj", "{97EA18B8-9F2E-4568-99D0-AD9990996431}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fundamentals", "Fundamentals", "{9C0EBBAF-E738-47E8-B75A-76D10372F9BE}"
 EndProject
@@ -55,9 +55,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Behavioral.S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Fundamentals", "2.Fundamentals", "{738B1CB6-E236-45AE-8D03-01D75E1C3C96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.ConsoleApp", "Weather.ConsoleApp\Weather.ConsoleApp.csproj", "{59E9B53E-A49B-4747-8DC2-EE0310FE4067}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Fundamentals.Weather.ConsoleApp", "DI.Fundamentals.Weather.ConsoleApp\DI.Fundamentals.Weather.ConsoleApp.csproj", "{59E9B53E-A49B-4747-8DC2-EE0310FE4067}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Api", "Weather.Api\Weather.Api.csproj", "{C34C9101-6738-4330-9C0F-412E905F7E40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Fundamentals.Weather.Api", "DI.Fundamentals.Weather.Api\DI.Fundamentals.Weather.Api.csproj", "{C34C9101-6738-4330-9C0F-412E905F7E40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.DeepDive", "3.DeepDive", "{5D2D5EE0-10DB-4E92-A3E1-3D6FFC8FB4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.DeepDive.Limitations.Api", "DI.DeepDive.Limitations.Api\DI.DeepDive.Limitations.Api.csproj", "{8C007130-4F49-4C64-994F-09C92F461A9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,6 +149,10 @@ Global
 		{C34C9101-6738-4330-9C0F-412E905F7E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C34C9101-6738-4330-9C0F-412E905F7E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C34C9101-6738-4330-9C0F-412E905F7E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C007130-4F49-4C64-994F-09C92F461A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C007130-4F49-4C64-994F-09C92F461A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C007130-4F49-4C64-994F-09C92F461A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C007130-4F49-4C64-994F-09C92F461A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -176,5 +184,7 @@ Global
 		{738B1CB6-E236-45AE-8D03-01D75E1C3C96} = {09739915-792C-4FF7-933E-D99F328D1B8F}
 		{59E9B53E-A49B-4747-8DC2-EE0310FE4067} = {738B1CB6-E236-45AE-8D03-01D75E1C3C96}
 		{C34C9101-6738-4330-9C0F-412E905F7E40} = {738B1CB6-E236-45AE-8D03-01D75E1C3C96}
+		{5D2D5EE0-10DB-4E92-A3E1-3D6FFC8FB4C3} = {09739915-792C-4FF7-933E-D99F328D1B8F}
+		{8C007130-4F49-4C64-994F-09C92F461A9C} = {5D2D5EE0-10DB-4E92-A3E1-3D6FFC8FB4C3}
 	EndGlobalSection
 EndGlobal
