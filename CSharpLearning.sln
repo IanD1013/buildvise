@@ -63,6 +63,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.DeepDive", "3.DeepDive", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.DeepDive.Limitations.Api", "DI.DeepDive.Limitations.Api\DI.DeepDive.Limitations.Api.csproj", "{8C007130-4F49-4C64-994F-09C92F461A9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.DeepDive.Weather.Api", "DI.DeepDive.Weather.Api\DI.DeepDive.Weather.Api.csproj", "{F013EC6C-4DFE-4054-A86B-82705FFB8143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{8C007130-4F49-4C64-994F-09C92F461A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C007130-4F49-4C64-994F-09C92F461A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C007130-4F49-4C64-994F-09C92F461A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F013EC6C-4DFE-4054-A86B-82705FFB8143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F013EC6C-4DFE-4054-A86B-82705FFB8143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F013EC6C-4DFE-4054-A86B-82705FFB8143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F013EC6C-4DFE-4054-A86B-82705FFB8143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -186,5 +192,6 @@ Global
 		{C34C9101-6738-4330-9C0F-412E905F7E40} = {738B1CB6-E236-45AE-8D03-01D75E1C3C96}
 		{5D2D5EE0-10DB-4E92-A3E1-3D6FFC8FB4C3} = {09739915-792C-4FF7-933E-D99F328D1B8F}
 		{8C007130-4F49-4C64-994F-09C92F461A9C} = {5D2D5EE0-10DB-4E92-A3E1-3D6FFC8FB4C3}
+		{F013EC6C-4DFE-4054-A86B-82705FFB8143} = {5D2D5EE0-10DB-4E92-A3E1-3D6FFC8FB4C3}
 	EndGlobalSection
 EndGlobal
