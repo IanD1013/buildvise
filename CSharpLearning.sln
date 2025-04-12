@@ -67,6 +67,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.DeepDive.Weather.Api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Behavioral.Iterator", "DesignPatterns.Behavioral.Iterator\DesignPatterns.Behavioral.Iterator.csproj", "{5998DB8E-DE27-4BBF-9185-660EFE001B7A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Advanced", "4.Advanced", "{3B67A637-3533-495C-AF20-40BFC402DC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomScope.ConsoleApp", "CustomScope.ConsoleApp\CustomScope.ConsoleApp.csproj", "{C7497FE9-A56B-45C0-ACBF-6BEC3E992EF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +169,10 @@ Global
 		{5998DB8E-DE27-4BBF-9185-660EFE001B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5998DB8E-DE27-4BBF-9185-660EFE001B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5998DB8E-DE27-4BBF-9185-660EFE001B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7497FE9-A56B-45C0-ACBF-6BEC3E992EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7497FE9-A56B-45C0-ACBF-6BEC3E992EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7497FE9-A56B-45C0-ACBF-6BEC3E992EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7497FE9-A56B-45C0-ACBF-6BEC3E992EF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,5 +208,7 @@ Global
 		{8C007130-4F49-4C64-994F-09C92F461A9C} = {5D2D5EE0-10DB-4E92-A3E1-3D6FFC8FB4C3}
 		{F013EC6C-4DFE-4054-A86B-82705FFB8143} = {5D2D5EE0-10DB-4E92-A3E1-3D6FFC8FB4C3}
 		{5998DB8E-DE27-4BBF-9185-660EFE001B7A} = {B4ED16F0-A633-407C-9F07-C26AD487F2F6}
+		{3B67A637-3533-495C-AF20-40BFC402DC58} = {09739915-792C-4FF7-933E-D99F328D1B8F}
+		{C7497FE9-A56B-45C0-ACBF-6BEC3E992EF5} = {3B67A637-3533-495C-AF20-40BFC402DC58}
 	EndGlobalSection
 EndGlobal
