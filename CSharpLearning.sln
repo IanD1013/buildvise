@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Advanced.CustomScope.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Advanced.MultiFunction.ConsoleApp", "DI.Advanced.MultiFunction.ConsoleApp\DI.Advanced.MultiFunction.ConsoleApp.csproj", "{C0573B55-007B-4F75-87BA-727490749210}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Advanced.Weather.Api", "DI.Advanced.Weather.Api\DI.Advanced.Weather.Api.csproj", "{0D8EF059-83AA-470A-A52A-C6E085B43436}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,10 @@ Global
 		{C0573B55-007B-4F75-87BA-727490749210}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0573B55-007B-4F75-87BA-727490749210}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0573B55-007B-4F75-87BA-727490749210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D8EF059-83AA-470A-A52A-C6E085B43436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8EF059-83AA-470A-A52A-C6E085B43436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8EF059-83AA-470A-A52A-C6E085B43436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8EF059-83AA-470A-A52A-C6E085B43436}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -217,5 +223,6 @@ Global
 		{3B67A637-3533-495C-AF20-40BFC402DC58} = {09739915-792C-4FF7-933E-D99F328D1B8F}
 		{C7497FE9-A56B-45C0-ACBF-6BEC3E992EF5} = {3B67A637-3533-495C-AF20-40BFC402DC58}
 		{C0573B55-007B-4F75-87BA-727490749210} = {3B67A637-3533-495C-AF20-40BFC402DC58}
+		{0D8EF059-83AA-470A-A52A-C6E085B43436} = {3B67A637-3533-495C-AF20-40BFC402DC58}
 	EndGlobalSection
 EndGlobal
