@@ -11,10 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpClient();
-
-builder.Services.AddTransient<OpenWeatherService>();
-builder.Services.AddTransient<IWeatherService>(provider =>
-    new LoggedWeatherService(provider.GetRequiredService<OpenWeatherService>(), provider.GetRequiredService<ILogger<IWeatherService>>()));
+builder.Services.AddTransient<IWeatherService, OpenWeatherService>();
+builder.Services.Decorate<IWeatherService, LoggedWeatherService>();
 
 var app = builder.Build();
 
