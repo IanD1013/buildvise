@@ -14,14 +14,10 @@ public class CompaniesController(ISender mediator) : ControllerBase
     {
         var command = new CreateCompanyCommand(request.Name);
         
-        var companyId = await mediator.Send(command);
+        var createCompanyResult = await mediator.Send(command);
 
-        var response = new CreateCompanyResponse
-        {
-            Id = companyId,
-            Name = request.Name
-        };
-        
-        return Ok(response);
+        return createCompanyResult.MatchFirst(
+            guid => Ok(new CreateCompanyResponse { Id = guid, Name = request.Name }),
+            error => Problem());
     }
 }
