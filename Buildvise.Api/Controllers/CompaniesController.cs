@@ -17,7 +17,7 @@ public class CompaniesController(ISender mediator) : ControllerBase
         var createCompanyResult = await mediator.Send(command);
 
         return createCompanyResult.MatchFirst(
-            guid => Ok(new CreateCompanyResponse { Id = guid, Name = request.Name }),
+            company => Ok(new CreateCompanyResponse { Id = company.Id, Name = request.Name }),
             error => Problem());
     }
 }
