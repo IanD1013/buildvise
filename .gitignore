@@ -365,3 +365,5 @@ FodyWeavers.xsd
 .idea/
 
 .DS_Store
+
+Buildvise.Api/appsettings.Secrets.json
