@@ -1,4 +1,5 @@
 using Buildvise.Application.Companies.Commands.CreateCompany;
+using Buildvise.Application.Companies.Queries.GetCompany;
 using Buildvise.Contracts.Companies;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +18,19 @@ public class CompaniesController(ISender mediator) : ControllerBase
         var createCompanyResult = await mediator.Send(command);
 
         return createCompanyResult.MatchFirst(
-            company => Ok(new CreateCompanyResponse { Id = company.Id, Name = request.Name }),
+            company => Ok(new CompanyResponse { Id = company.Id, Name = company.Name }),
+            error => Problem());
+    }
+
+    [HttpGet("{companyId:guid}")]
+    public async Task<IActionResult> GetCompany(Guid companyId)
+    {
+        var query = new GetCompanyQuery(companyId);
+
+        var getCompanyResult = await mediator.Send(query);
+
+        return getCompanyResult.MatchFirst(
+            company => Ok(new CompanyResponse { Id = company.Id, Name = company.Name }),
             error => Problem());
     }
 }

@@ -1,0 +1,4 @@
+@host=http://localhost:5257
+@companyId=
+
+GET {{host}}/companies/{{companyId}}

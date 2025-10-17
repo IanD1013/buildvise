@@ -5,7 +5,9 @@ using MediatR;
 
 namespace Buildvise.Application.Companies.Commands.CreateCompany;
 
-public class CreateCompanyCommandHandler(ICompaniesRepository companiesRepository, IUnitOfWork unitOfWork)
+public class CreateCompanyCommandHandler(
+    ICompaniesRepository companiesRepository, 
+    IUnitOfWork unitOfWork)
     : IRequestHandler<CreateCompanyCommand, ErrorOr<Company>>
 {
     public async Task<ErrorOr<Company>> Handle(CreateCompanyCommand request, CancellationToken cancellationToken)
