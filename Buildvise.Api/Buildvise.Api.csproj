@@ -14,6 +14,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Buildvise.Application\Buildvise.Application.csproj" />
       <ProjectReference Include="..\Buildvise.Contracts\Buildvise.Contracts.csproj" />
+      <ProjectReference Include="..\Buildvise.Infrastructure\Buildvise.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
