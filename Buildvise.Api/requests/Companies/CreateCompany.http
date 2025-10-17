@@ -1,0 +1,8 @@
+@host=http://localhost:5257
+
+POST {{host}}/companies
+Content-Type: application/json
+
+{
+  "Name": "Company 1"
+}
