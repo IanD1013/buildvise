@@ -1,4 +1,4 @@
 @host=http://localhost:5257
-@companyId=
+@companyId=eea62330-0c56-4ce5-aecc-5502cde87589
 
 GET {{host}}/companies/{{companyId}}

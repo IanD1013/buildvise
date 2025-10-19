@@ -2,13 +2,13 @@ using Buildvise.Application.Companies.Commands.CreateCompany;
 using Buildvise.Application.Companies.Queries.GetCompany;
 using Buildvise.Contracts.Companies;
 using MediatR;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace Buildvise.Api.Controllers;
 
-[ApiController]
 [Route("[controller]")]
-public class CompaniesController(ISender mediator) : ControllerBase
+public class CompaniesController(ISender mediator) : ApiController
 {
     [HttpPost]
     public async Task<IActionResult> CreateCompany(CreateCompanyRequest request)
@@ -17,9 +17,11 @@ public class CompaniesController(ISender mediator) : ControllerBase
         
         var createCompanyResult = await mediator.Send(command);
 
-        return createCompanyResult.MatchFirst(
-            company => Ok(new CompanyResponse { Id = company.Id, Name = company.Name }),
-            error => Problem());
+        return createCompanyResult.Match(
+            company => CreatedAtAction(nameof(GetCompany), 
+                new { companyId = company.Id }, 
+                new CompanyResponse { Id = company.Id, Name = company.Name }),
+            Problem);
     }
 
     [HttpGet("{companyId:guid}")]
@@ -29,8 +31,8 @@ public class CompaniesController(ISender mediator) : ControllerBase
 
         var getCompanyResult = await mediator.Send(query);
 
-        return getCompanyResult.MatchFirst(
+        return getCompanyResult.Match(
             company => Ok(new CompanyResponse { Id = company.Id, Name = company.Name }),
-            error => Problem());
+            Problem);
     }
 }

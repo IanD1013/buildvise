@@ -1,3 +1,4 @@
+using System.Reflection;
 using Buildvise.Application.Common.Interfaces;
 using Buildvise.Domain.Companies;
 using Microsoft.EntityFrameworkCore;
@@ -13,5 +14,11 @@ public class BuildviseDbContext : DbContext, IUnitOfWork
     public async Task CommitChangesAsync()
     {
         await base.SaveChangesAsync();
+    }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        base.OnModelCreating(modelBuilder);
     }
 }
