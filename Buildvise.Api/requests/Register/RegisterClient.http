@@ -1,0 +1,37 @@
+@host=http://localhost:5257
+
+### First request
+POST {{host}}/register/client
+Content-Type: application/json
+
+{
+  "FullName": "Ava Thompson",
+  "Email": "ava.thompson@example.com",
+  "Bio": "Passionate about fitness and nutrition, looking for personalized gym programs.",
+  "PhoneNumber": "+64 21 456 7890",
+  "Password": "Xy@92lMn#7Qp"
+}
+
+### Second request (PhoneNumber is null)
+POST {{host}}/register/client
+Content-Type: application/json
+
+{
+  "fullName": "Liam Chen",
+  "email": "liam.chen@example.com",
+  "bio": "Software engineer exploring strength training and yoga to improve posture and endurance.",
+  "phoneNumber": null,
+  "password": "Tg#84zQm!Lp9"
+}
+
+### 
+POST {{host}}/register/client
+Content-Type: application/json
+
+{
+  "fullName": "Sofia Patel",
+  "email": "sofia.patel@example.com",
+  "bio": "Marketing professional aiming to build consistency in gym routines and improve overall wellness.",
+  "password": "1229"
+}
+

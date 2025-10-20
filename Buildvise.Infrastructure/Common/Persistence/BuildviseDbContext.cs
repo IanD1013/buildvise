@@ -1,5 +1,6 @@
 using System.Reflection;
 using Buildvise.Application.Common.Interfaces;
+using Buildvise.Domain.Clients;
 using Buildvise.Domain.Companies;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,7 @@ namespace Buildvise.Infrastructure.Common.Persistence;
 public class BuildviseDbContext : DbContext, IUnitOfWork
 {
     public DbSet<Company> Companies => Set<Company>();
+    public DbSet<Client> Clients => Set<Client>();
     
     public BuildviseDbContext(DbContextOptions<BuildviseDbContext> options) : base(options) {}
     

@@ -8,6 +8,17 @@ public class CompanyConfiguration : IEntityTypeConfiguration<Company>
 {
     public void Configure(EntityTypeBuilder<Company> builder)
     {
-        throw new NotImplementedException();
+        builder.HasKey(c => c.Id);
+
+        builder.Property(c => c.CompanyName);
+
+        builder.Property(c => c.WorkEmail);
+        
+        builder.Property(c => c.CompanyBio);
+        
+        builder.Property(c => c.PhoneNumber);
+        
+        builder.Property("_passwordHash")
+            .HasColumnName("PasswordHash");
     }
 }

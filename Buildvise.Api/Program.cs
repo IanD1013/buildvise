@@ -10,11 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddSwaggerGen();
     builder.Services.AddProblemDetails();
 
-    builder.Services.AddApplication();
-    
-    var connectionString = builder.Configuration.GetConnectionString("Default") 
-                           ?? throw new InvalidOperationException("Db Connection string not found!");
-    builder.Services.AddInfrastructure(connectionString);
+    builder.Services
+        .AddApplication()
+        .AddInfrastructure(builder.Configuration);
 }
 
 var app = builder.Build();
@@ -28,9 +26,7 @@ var app = builder.Build();
     }
     
     app.UseHttpsRedirection();
-    
     app.UseAuthorization();
-    
     app.MapControllers();
     
     app.Run();
